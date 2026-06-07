@@ -1,4 +1,4 @@
-# 🛠️ geosite-rules (Автоматический сборщик правил для sing-box)
+# 🛠️ Автоматический сборщик правил для sing-box
 
 Этот репозиторий автоматически раз в сутки (в 00:00 UTC) собирает актуальные правила маршрутизации из внешних источников, очищает их от дубликатов, распределяет по целевым маршрутам и компилирует в бинарный формат `.srs` для sing-box.
 
@@ -34,14 +34,14 @@
         "tag": "proxy_a_list",
         "type": "remote",
         "format": "binary",
-        "url": "[https://raw.githubusercontent.com/shigalovalexs/geosite-rules/main/proxy_a_rules.srs](https://raw.githubusercontent.com/shigalovalexs/geosite-rules/main/proxy_a_rules.srs)",
+        "url": "https://raw.githubusercontent.com/shigalovalexs/geosite-rules/main/proxy_a_rules.srs",
         "download_detour": "direct"
       },
       {
         "tag": "proxy_b_list",
         "type": "remote",
         "format": "binary",
-        "url": "[https://raw.githubusercontent.com/shigalovalexs/geosite-rules/main/proxy_b_rules.srs](https://raw.githubusercontent.com/shigalovalexs/geosite-rules/main/proxy_b_rules.srs)",
+        "url": "https://raw.githubusercontent.com/shigalovalexs/geosite-rules/main/proxy_b_rules.srs",
         "download_detour": "direct"
       }
     ],
