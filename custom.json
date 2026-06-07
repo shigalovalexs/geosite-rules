@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "rules": [
+        {
+            "domain_suffix": [
+                "attestation.app",
+                "seamlessupdate.app",
+                "vanadium.app"
+            ],
+            "domain_keyword": [
+                "grapheneos",
+                "grindr",
+                "helpdesk",
+                "hornet",
+                "livechat",
+                "text"
+            ]
+        }
+    ]
+}
