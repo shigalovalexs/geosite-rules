@@ -5,6 +5,7 @@ import urllib.request
 
 # 1. СПИСОК ССЫЛОК НА ГИТХАБ
 GITHUB_URLS = [
+    "https://raw.githubusercontent.com/shigalovalexs/geosite-rules/refs/heads/main/custom.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/cloudflare.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/fastly.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/google.json",
