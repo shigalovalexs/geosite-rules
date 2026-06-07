@@ -31,6 +31,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add combined_single_rule.json combined_single_rule.srs
+          git add proxy_a_rules.json proxy_a_rules.srs proxy_b_rules.json proxy_b_rules.srs
           git commit -m "Auto-update: rules merged and compiled to SRS" || echo "No changes to commit"
           git push
