@@ -1350,6 +1350,8 @@
         "helpdesk",
         "hornet",
         "livechat",
+        "mangalib",
+        "pixiv",
         "text"
       ],
       "ip_cidr": [
