@@ -9,6 +9,7 @@
                 "vanadium.app"
             ],
             "domain_keyword": [
+                "arduino",
                 "grapheneos",
                 "grindr",
                 "helpdesk",
@@ -16,6 +17,7 @@
                 "livechat",
                 "mangalib",
                 "pixiv",
+                "postman",
                 "text"
             ]
         }
