@@ -1878,10 +1878,14 @@
         "youtubeembeddedplayer.googleapis.com",
         "youtubei.googleapis.com",
         "youtube-ui.l.google.com",
-        "wide-youtube.l.google.com"
+        "wide-youtube.l.google.com",
+        "applemusic.com",
+        "blobstore.apple.com",
+        "music.apple.com"
       ],
       "domain_keyword": [
         "arduino",
+        "auphonic",
         "grapheneos",
         "grindr",
         "helpdesk",
@@ -10689,7 +10693,13 @@
         "spotify.map.fastlylb.net",
         "adeventtracker.spotify.com",
         "adstudio-assets.scdn.co",
-        "bloodhound.spotify.com"
+        "bloodhound.spotify.com",
+        "aod-ssl.itunes.apple.com",
+        "aod.itunes.apple.com",
+        "audio-ssl.itunes.apple.com",
+        "audio.itunes.apple.com",
+        "mvod.itunes.apple.com",
+        "streamingaudio.itunes.apple.com"
       ],
       "domain_regex": [
         ".+\\.awsdns-[0-9][0-9]\\.(co\\.uk|com|net|org)$",
