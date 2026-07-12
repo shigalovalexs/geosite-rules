@@ -4,6 +4,7 @@
     {
       "domain_suffix": [
         "attestation.app",
+        "csa-iot.org",
         "lolvvv.com",
         "seamlessupdate.app",
         "vanadium.app",
@@ -1799,6 +1800,15 @@
         "host.livekit.cloud",
         "turn.livekit.cloud",
         "openai.com.cdn.cloudflare.net",
+        "pm.me",
+        "proton.me",
+        "protonmail.ch",
+        "protonmail.com",
+        "protonstatus.com",
+        "protontech.ch",
+        "protonvpn.ch",
+        "protonvpn.com",
+        "protonweb.com",
         "slack-core.com",
         "slack-edge.com",
         "slack-files.com",
@@ -1887,6 +1897,8 @@
       "domain_keyword": [
         "arduino",
         "auphonic",
+        "caddyserver",
+        "docker",
         "grapheneos",
         "grindr",
         "helpdesk",
@@ -1895,7 +1907,8 @@
         "mangalib",
         "pixiv",
         "postman",
-        "text"
+        "text",
+        "vdsina"
       ],
       "ip_cidr": [
         "1.0.0.0/24",

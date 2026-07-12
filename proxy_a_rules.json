@@ -1,6 +1,10 @@
 {
   "version": 2,
   "rules": [
-    {}
+    {
+      "domain_suffix": [
+        "2ip.io"
+      ]
+    }
   ]
 }
