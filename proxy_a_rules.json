@@ -3,7 +3,16 @@
   "rules": [
     {
       "domain_suffix": [
-        "2ip.io"
+        "2ip.io",
+        "pm.me",
+        "proton.me",
+        "protonmail.ch",
+        "protonmail.com",
+        "protonstatus.com",
+        "protontech.ch",
+        "protonvpn.ch",
+        "protonvpn.com",
+        "protonweb.com"
       ]
     }
   ]
