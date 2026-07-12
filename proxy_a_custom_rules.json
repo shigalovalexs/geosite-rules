@@ -3,7 +3,12 @@
     "rules": [
         {
             "domain_suffix": [
-                "2ip.io"
+                "csa-iot.org"
+            ],
+            "domain_keyword": [
+                "caddyserver",
+                "docker",
+                "vdsina"
             ]
         }
     ]
