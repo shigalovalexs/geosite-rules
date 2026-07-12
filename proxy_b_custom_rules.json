@@ -4,7 +4,6 @@
         {
             "domain_suffix": [
                 "attestation.app",
-                "csa-iot.org",
                 "lolvvv.com",
                 "seamlessupdate.app",
                 "vanadium.app"
@@ -12,8 +11,6 @@
             "domain_keyword": [
                 "arduino",
                 "auphonic",
-                "caddyserver",
-                "docker",
                 "grapheneos",
                 "grindr",
                 "helpdesk",
@@ -22,8 +19,7 @@
                 "mangalib",
                 "pixiv",
                 "postman",
-                "text",
-                "vdsina"
+                "text"
             ]
         }
     ]
