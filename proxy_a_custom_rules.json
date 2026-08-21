@@ -3,7 +3,8 @@
     "rules": [
         {
             "domain_suffix": [
-                "csa-iot.org"
+                "csa-iot.org",
+                "phncdn.com"
             ],
             "domain_keyword": [
                 "caddyserver",
