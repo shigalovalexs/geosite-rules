@@ -1,18 +1,4 @@
 {
     "version": 2,
-    "rules": [
-        {
-            "domain_suffix": [
-                "csa-iot.org",
-                "iditena.org",
-                "phncdn.com"
-            ],
-            "domain_keyword": [
-                "caddyserver",
-                "docker",
-                "porn",
-                "vdsina"
-            ]
-        }
-    ]
+    "rules": []
 }

@@ -3,6 +3,9 @@
     "rules": [
         {
             "domain_suffix": [
+                "csa-iot.org",
+                "iditena.org",
+                "phncdn.com",
                 "attestation.app",
                 "lolvvv.com",
                 "mangadex.org",
@@ -10,6 +13,10 @@
                 "vanadium.app"
             ],
             "domain_keyword": [
+                "caddyserver",
+                "docker",
+                "porn",
+                "vdsina",
                 "arduino",
                 "auphonic",
                 "grapheneos",

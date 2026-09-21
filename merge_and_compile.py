@@ -6,7 +6,10 @@ import urllib.request
 # 1. РАЗДЕЛЬНЫЕ СПИСКИ ССЫЛОК НА ГИТХАБ
 
 # Список для Прокси A
-URLS_PROXY_A = [
+URLS_PROXY_A = []
+
+# Список для Прокси B
+URLS_PROXY_B = [
     "https://raw.githubusercontent.com/shigalovalexs/geosite-rules/refs/heads/main/proxy_a_custom_rules.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/apple.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/applemusic.json",
@@ -21,10 +24,6 @@ URLS_PROXY_A = [
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/spotify.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/xai.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/youtube.json",
-]
-
-# Список для Прокси B
-URLS_PROXY_B = [
     "https://raw.githubusercontent.com/shigalovalexs/geosite-rules/refs/heads/main/proxy_b_custom_rules.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/facebook.json",
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/fastly.json",
@@ -48,6 +47,7 @@ URLS_PROXY_B = [
     "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/whatsapp.json",
 ]
 
+
 def process_urls(urls, ssl_context):
     """Скачивает JSON по ссылкам и объединяет их правила."""
     master_rules = {}
@@ -58,7 +58,7 @@ def process_urls(urls, ssl_context):
         try:
             print(f"  Скачиваю: {url} ...")
             with urllib.request.urlopen(url, context=ssl_context) as response:
-                html = response.read().decode('utf-8')
+                html = response.read().decode("utf-8")
                 data = json.loads(html)
 
             if "rules" in data and isinstance(data["rules"], list):
@@ -87,10 +87,7 @@ def save_and_compile(master_rules, output_json, output_srs):
         else:
             single_rule[key] = unique_values
 
-    combined_data = {
-        "version": 2,
-        "rules": [single_rule]
-    }
+    combined_data = {"version": 2, "rules": [single_rule]}
 
     # Сохраняем JSON
     with open(output_json, "w", encoding="utf-8") as f:
@@ -103,7 +100,7 @@ def save_and_compile(master_rules, output_json, output_srs):
         result = subprocess.run(
             ["sing-box", "rule-set", "compile", "--output", output_srs, output_json],
             capture_output=True,
-            text=True
+            text=True,
         )
         if result.returncode == 0:
             print(f"  [Успех] Бинарный файл сохранен как: {output_srs}")
