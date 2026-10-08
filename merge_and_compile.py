@@ -3,17 +3,10 @@ import ssl
 import subprocess
 import urllib.request
 
-# 1. РАЗДЕЛЬНЫЕ СПИСКИ ССЫЛОК НА ГИТХАБ
-
-# Список для Прокси A
-URLS_PROXY_A = []
-
-# Список для Прокси B
-URLS_PROXY_B = [
+URLS = [
     "https://docs.google.com/spreadsheets/d/1J5RLblcEolS1_c5wjpV0D9AXoMS-zv5fhdtMXSilMjY/export?format=tsv&gid=1143023545",
     "https://docs.google.com/spreadsheets/d/1J5RLblcEolS1_c5wjpV0D9AXoMS-zv5fhdtMXSilMjY/export?format=tsv&gid=712038739",
 ]
-
 
 def process_urls(urls, ssl_context):
     """Скачивает JSON по ссылкам и объединяет их правила."""
@@ -82,15 +75,9 @@ def save_and_compile(master_rules, output_json, output_srs):
 def main():
     ssl_context = ssl._create_unverified_context()
 
-    # --- Обработка ПРОКСИ А ---
-    print("\n=== НАЧАЛО ОБРАБОТКИ: ПРОКСИ А ===")
-    rules_a = process_urls(URLS_PROXY_A, ssl_context)
-    save_and_compile(rules_a, "proxy_a_rules.json", "proxy_a_rules.srs")
-
-    # --- Обработка ПРОКСИ Б ---
-    print("\n=== НАЧАЛО ОБРАБОТКИ: ПРОКСИ B ===")
-    rules_b = process_urls(URLS_PROXY_B, ssl_context)
-    save_and_compile(rules_b, "proxy_b_rules.json", "proxy_b_rules.srs")
+    print("\n=== НАЧАЛО ОБРАБОТКИ ===")
+    rules = process_urls(URLS, ssl_context)
+    save_and_compile(rules, "proxy_rules.json", "proxy_rules.srs")
 
     print("\n=== ВСЕ ПРОЦЕССЫ ЗАВЕРШЕНЫ ===")
 
