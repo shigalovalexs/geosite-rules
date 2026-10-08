@@ -19,7 +19,7 @@ def process_urls(urls, ssl_context):
             print(f"  Скачиваю: {url} ...")
             with urllib.request.urlopen(url, context=ssl_context) as response:
                 html = response.read().decode("utf-8")
-                data = json.loads(html)
+                data = json.loads(text)
 
             if "rules" in data and isinstance(data["rules"], list):
                 for rule in data["rules"]:
