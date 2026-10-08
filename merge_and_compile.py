@@ -17,7 +17,8 @@ def process_urls(urls, ssl_context):
             continue
         try:
             print(f"  Скачиваю: {url} ...")
-            with urllib.request.urlopen(url, context=ssl_context) as response:
+            req = urllib.request.Request(url, headers={"User-Agent": "User-Agent: curl/7.54.1"})
+            with urllib.request.urlopen(req, context=ssl_context, timeout=30) as response:
                 html = response.read().decode("utf-8")
                 data = json.loads(text)
 
