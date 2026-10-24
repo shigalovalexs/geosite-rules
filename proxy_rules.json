@@ -3,7 +3,6 @@
   "rules": [
     {
       "domain_suffix": [
-        "accounts.spotify.com",
         "amnezia.org",
         "animelib.org",
         "anthropic.com",
@@ -79,8 +78,11 @@
         "pornhub.org",
         "pximg.net",
         "ranobelib.me",
+        "scdn.co",
         "slashlib.me",
         "sora.com",
+        "spotify.com",
+        "spotifycdn.com",
         "stripe.com",
         "t.co",
         "t.me",
